@@ -33,12 +33,11 @@ export default function About() {
         </div>
 
         {/* Officers by group */}
-        {groups.map(({ key, label }) => {
+        {groups.map(({ key }) => {
           const members = officers.filter((o) => o.group === key)
           if (!members.length) return null
           return (
             <section key={key} className={styles.section}>
-              <h2 className={styles.groupLabel}>{label}</h2>
               <div className={styles.grid}>
                 {members.map((o) => (
                   <OfficerCard key={o.email} officer={o} />
