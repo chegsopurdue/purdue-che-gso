@@ -6,11 +6,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // basePath: isProd ? '/purdue-che-gso' : '',
-  // assetPrefix: isProd ? '/purdue-che-gso/' : '',
-
-  basePath: '/purdue-che-gso',
-  assetPrefix: '/purdue-che-gso/',
+  basePath: isProd ? '/purdue-che-gso' : '',
+  assetPrefix: isProd ? '/purdue-che-gso/' : '',
 }
 
 module.exports = nextConfig

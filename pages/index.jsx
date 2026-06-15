@@ -7,6 +7,7 @@ import SymposiumBanner from '../components/SymposiumBanner'
 import ProspectiveSection from '../components/ProspectiveSection'
 import OfficersGrid from '../components/OfficersGrid'
 import Footer from '../components/Footer'
+import prefix from '../utils/prefix'
 
 export default function Home() {
   return (
@@ -30,7 +31,7 @@ export default function Home() {
 
         Example: <Hero bgImage="/images/hero-bg.jpg" overlayOpacity={0.5} />
       */}
-      <Hero bgImage="/images/hero-bg-cropped.jpeg" overlayOpacity={0.6} />
+      <Hero bgImage={`${prefix}/images/hero-bg.jpg`} overlayOpacity={0.55} />
 
       <Ticker />
 
