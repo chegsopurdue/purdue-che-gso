@@ -1,7 +1,7 @@
 // pages/activities/social.jsx
 import ActivityLayout from '../../components/ActivityLayout'
 import Gallery from '../../components/Gallery'
-import prefix from '../utils/prefix'
+import prefix from '../../utils/prefix'
 
 const photos = {
   coffeeHour: [
