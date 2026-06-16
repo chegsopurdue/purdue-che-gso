@@ -17,7 +17,7 @@ export default function Hero({ bgImage, overlayOpacity = 0.55 }) {
       {bgImage ? (
         <div
           className={styles.bg}
-          style={{ backgroundImage: `url(${prefix}${bgImage})` }}
+          style={{ backgroundImage: `url(${bgImage})` }}
         />
       ) : (
         <div className={`${styles.bg} ${styles.bgPlaceholder}`} />
